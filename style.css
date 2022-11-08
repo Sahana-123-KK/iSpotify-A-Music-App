@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Poppins&display=swap");
+
+body {
+  background-color: antiquewhite;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  height: 60px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul li {
+  padding: 10px;
+  font-size: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.brand img {
+  width: 60px;
+  padding: 10px;
+}
+.songitem img {
+  height: 30px;
+}
+.banner {
+  width: 50%;
+}
+.songList {
+  width: 45%;
+}
+i {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+.songitem {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  width: 100%;
+}
+.songinfo {
+  position: absolute;
+  left: 10vw;
+}
+.container {
+  min-height: 65vh;
+  display: flex;
+  width: 70%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin: 10px auto;
+  background-image: url("./music-8.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.player {
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: sticky;
+  bottom: 0px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fonticons {
+  margin: 10px 0px;
+}
+#myprogressBar {
+  width: 80%;
+}
+@media screen and (max-width: 950px) {
+  .songinfo {
+    left: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+  .banner {
+    width: 25%;
+  }
+  .songList {
+    width: 70%;
+  }
+  .songinfo {
+    position: static;
+
+    /* left: -9vw;
+    font-size: 12px;
+    margin-left: 3px; */
+  }
+  .player {
+    height: 105px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner {
+    width: 0%;
+  }
+  .songList {
+    width: 95%;
+  }
+  .songinfo {
+    position: static;
+  }
+  .player {
+    height: 105px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  nav ul li {
+    font-size: 15px;
+  }
+  .brand img {
+    width: 40px;
+    padding: 5px;
+  }
+  nav {
+    padding: 0px;
+  }
+}
